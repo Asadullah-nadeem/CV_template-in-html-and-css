@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Muhammad Asadullah Nadeem</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .company {
+            font-style: italic;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #f3f4f6;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .download-btn {
+            display: block;
+            margin: 20px auto;
+            background-color: #1d4ed8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container bg-white p-10 shadow-lg mt-10 rounded-lg" id="resume-content">
+        <header class="text-center">
+            <h1 class="text-4xl font-bold mb-2">Muhammad Asadullah Nadeem</h1>
+            <p>Backend and Front-end web Development | 11 Months Experience in PHP Frameworks Development | I'm a fresher</p>
+            <p><a href="https://github.com/asadullah-nadeem/" class="text-blue-500">github.com/asadullah-nadeem</a> | <a
+                    href="https://www.linkedin.com/in/asadullah-nadeem/" class="text-blue-500">Linkedin/in/asadullah-nadeem</a></p>
+        </header>
+
+        <section class="mt-8">
+            <h2 class="section-title">Contact Information</h2>
+            <p>Email: asadullahn89@gmail.com</p>
+            <p>Phone: +91 82268 32006</p>
+            <p>Location: Ranchi, India</p>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="section-title">Education</h2>
+            <p>Sarala Birla University (SBU), Ranchi</p>
+            <p>Computer Science Engineering (April 2023 - April 2026)</p>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="section-title">Experience</h2>
+            <div>
+                <p class="job-title">Full Stack DeveloperFull Stack Developer</p>
+                <p class="company"> Leveledge Technologies Leveledge Technologies
+                </p>
+                <p>Dec 2023 - May 2024</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed Website and Backend code using CodeIgniter, Laravel and Symfony.</li>
+                    <li>Collaborated with the design team to create user-friendly interfaces.</li>
+                    <li>Implemented various features and functionalities as per client requirements.</li>
+                </ul>
+            </div>
+            <div>
+                <p class="job-title"> Upwork · Freelance | Redesign a Website </p>
+                <p class="company">
+                </p>
+                <p>May 2023 - Apr 2024</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed Redesign a Website and Backend code using html, css, JavaScript and php.</li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <span>Backend Development</span>
+                <span>JavaScript</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <!-- <span>Java</span>
+                <span>Kotlin</span> -->
+                <span>HTML</span>
+                <span>Mysql</span>
+                <span>CodeIgniter</span>
+                <span>Laravel</span>
+                <span>Symfony</span>
+
+                <!-- <span>Node.js</span> -->
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <h2 class="section-title">Projects</h2>
+            <div>
+                <p class="job-title">A Fully Featured Admin Panel.</p>
+                <p>Using Core PHP with Mysql, HTML, and CSS for Self.</p>
+            </div>
+            <div>
+                <p class="job-title"><a href="https://surjaplastics.com/">surjaplastics.com</a></p>
+                <p>Using CodeIgniter PHP with Mysql, HTML, and CSS for Company.</p>
+                <p>Backend and Front-end web Development.</p>
+            </div>
+            <div>
+                <p class="job-title"><a href="https://www.dynamicskuwait.com/">dynamicskuwait.com</a></p>
+                <p>Using Laravel PHP with Mysql, HTML, and CSS for Company.</p>
+                <p>Backend and Front-end web Development.</p>
+            </div>
+            <div>
+                <p class="job-title">Symbol Recognition Project</p>
+                <p>Developing a system to recognize symbols using image recognition algorithms and optical character
+                    recognition.</p>
+            </div>
+        </section>
+
+        <button class="download-btn" onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+    <script>
+        const { jsPDF } = window.jspdf;
+
+        function downloadPDF() {
+            const resumeContent = document.getElementById('resume-content');
+            html2canvas(resumeContent, { scale: 3 }).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF({
+                    orientation: 'portrait',
+                    unit: 'px',
+                    format: [canvas.width, canvas.height]
+                });
+                pdf.addImage(imgData, 'PNG', 0, 0);
+                pdf.save("resume.pdf");
+            });
+        }
+    </script>
+</body>
+
+</html>
