@@ -1,21 +1,25 @@
-# CV Template in HTML
+# Single-Page CV Template
 
-This project is a single-page CV template created with HTML. It showcases a structured layout for a CV with sections for contact information, education, experience, skills, and projects.
+This project is a single-page HTML CV template that showcases career history, skills, and education. It is structured with semantic HTML and includes SEO meta tags, Open Graph tags, and a favicon. This template serves as a foundation for adding CSS styling in future projects.
 
 ## Project URL
-[GitHub Repository](https://github.com/Asadullah-nadeem/CV_template-in-html-and-css)
+
+- GitHub Repository: [https://github.com/Asadullah-nadeem/CV_template-in-html-and-css](https://github.com/Asadullah-nadeem/CV_template-in-html-and-css)
 
 ## Project Page URL
-[Live Demo on GitHub Pages](https://asadullah-nadeem.github.io/CV_template-in-html-and-css/)
+
+- Roadmap Project Page: [https://roadmap.sh/projects/single-page-cv](https://roadmap.sh/projects/single-page-cv)
 
 ## Features
-- **Semantic HTML**: Structured using semantic tags for improved accessibility and readability.
-- **SEO Optimization**: Includes meta tags to enhance search engine visibility.
-- **Open Graph Tags**: Optimized for social media sharing.
-- **Favicon**: Includes a favicon for easy identification in browser tabs.
 
-## Instructions
-Clone the repository and open the `index.html` file in your browser to view the CV.
+- **Semantic HTML**: Organized with appropriate HTML tags for clear structure and readability.
+- **SEO Optimization**: Includes essential meta tags to improve search engine visibility.
+- **Social Media Sharing**: Uses Open Graph (OG) tags for better link previews on social media.
+- **Favicon**: Adds a favicon for a polished look.
 
-```bash
-git clone https://github.com/Asadullah-nadeem/CV_template-in-html-and-css.git
+## Instructions to Run the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Asadullah-nadeem/CV_template-in-html-and-css.git
