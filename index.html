@@ -5,88 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Muhammad Asadullah Nadeem</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Resume of Muhammad Asadullah Nadeem, a full-stack web developer with experience in PHP frameworks.">
+    <meta name="keywords" content="Muhammad Asadullah Nadeem, CV, resume, web developer, PHP, HTML, CSS, JavaScript, CodeIgniter, Laravel, Symfony">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Resume - Muhammad Asadullah Nadeem">
+    <meta property="og:description" content="Full-stack web developer specializing in backend and front-end development.">
+    <meta property="og:image" content="link-to-your-image.jpg"> <!-- Add a link to an image if available -->
+    <meta property="og:url" content="https://asadullah-nadeem.github.io/CV_template-in-html-and-css/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body>
 
-    <div class="container bg-white p-10 shadow-lg mt-10 rounded-lg" id="resume-content">
+    <!-- Main Content Wrapper -->
+    <main class="container" id="resume-content">
+
+        <!-- Header -->
         <header class="text-center">
-            <h1 class="text-4xl font-bold mb-2 material-text">Muhammad Asadullah Nadeem</h1>
+            <h1>Muhammad Asadullah Nadeem</h1>
             <p>Backend and Front-end web Development | 11 Months Experience in PHP Frameworks Development | I'm a fresher</p>
-            <p><a href="https://github.com/asadullah-nadeem/" class="text-blue-500">github.com/asadullah-nadeem</a> | <a
-                    href="https://www.linkedin.com/in/asadullah-nadeem/" class="text-blue-500">Linkedin/in/asadullah-nadeem</a></p>
+            <p>
+                <a href="https://github.com/asadullah-nadeem/">github.com/asadullah-nadeem</a> |
+                <a href="https://www.linkedin.com/in/asadullah-nadeem/">LinkedIn/in/asadullah-nadeem</a>
+            </p>
         </header>
 
-        <section class="mt-8">
-            <h2 class="section-title">Contact Information</h2>
+        <!-- Contact Information -->
+        <section>
+            <h2>Contact Information</h2>
             <p>Email: asadullahn89@gmail.com</p>
             <p>Phone: +91 xxxxx xxxxx</p>
             <p>Location: Ranchi, India</p>
         </section>
 
-        <section class="mt-8">
-            <h2 class="section-title">Education</h2>
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
             <p>Sarala Birla University (SBU), Ranchi</p>
             <p>Computer Science Engineering (April 2023 - April 2026)</p>
         </section>
 
-        <section class="mt-8">
-            <h2 class="section-title">Experience</h2>
-            <div>
-                <p class="job-title">Full Stack Developer</p>
-                <p class="company">Leveledge Technologies</p>
-                <p>Dec 2023 - May 2024</p>
-                <ul class="list-disc pl-5">
-                    <li>Developed Website and Backend code using CodeIgniter, Laravel and Symfony.</li>
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <article>
+                <h3>Full Stack Developer</h3>
+                <p>Leveledge Technologies | Dec 2023 - May 2024</p>
+                <ul>
+                    <li>Developed Website and Backend code using CodeIgniter, Laravel, and Symfony.</li>
                     <li>Collaborated with the design team to create user-friendly interfaces.</li>
                     <li>Implemented various features and functionalities as per client requirements.</li>
                 </ul>
-            </div>
-            <div>
-                <p class="job-title">Upwork · Freelance | Redesign a Website</p>
-                <p class="company"> </p>
-                <p>May 2023 - Apr 2024</p>
-                <ul class="list-disc pl-5">
-                    <li>Developed Redesign a Website and Backend code using HTML, CSS, JavaScript, and PHP.</li>
+            </article>
+            <article>
+                <h3>Freelance - Upwork</h3>
+                <p>Redesign a Website | May 2023 - Apr 2024</p>
+                <ul>
+                    <li>Developed and redesigned a website using HTML, CSS, JavaScript, and PHP.</li>
                 </ul>
-            </div>
+            </article>
         </section>
 
-        <section class="mt-8">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills">
-                <span>Backend Development</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>PHP</span>
-                <span>HTML</span>
-                <span>MySQL</span>
-                <span>CodeIgniter</span>
-                <span>Laravel</span>
-                <span>Symfony</span>
-            </div>
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <p>Backend Development, JavaScript, CSS, PHP, HTML, MySQL, CodeIgniter, Laravel, Symfony</p>
         </section>
 
-        <section class="mt-8">
-            <h2 class="section-title">Projects</h2>
-            <div>
-                <p class="job-title">A Fully Featured Admin Panel.</p>
-                <p>Using Core PHP with MySQL, HTML, and CSS for Self.</p>
-            </div>
-            <div>
-                <p class="job-title">Symbol Recognition Project</p>
-                <p>Developing a system to recognize symbols using image recognition algorithms and optical character
-                    recognition.</p>
-            </div>
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>A Fully Featured Admin Panel</h3>
+                <p>Built using Core PHP with MySQL, HTML, and CSS for Self.</p>
+            </article>
+            <article>
+                <h3>Symbol Recognition Project</h3>
+                <p>Developed a system to recognize symbols using image recognition algorithms and optical character recognition.</p>
+            </article>
         </section>
-    </div>
 
-  
+    </main>
 </body>
 
 </html>
